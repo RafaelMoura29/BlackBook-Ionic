@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">  
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+       </ion-buttons>
+      <ion-title>Indicadores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="Prontuário" [(ngModel)]="indicador.Prontuario"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="Tipo" [(ngModel)]="indicador.Tipo"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>Data da Entrada:</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="indicador.DataEntrada"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>Horário da Entrada:</ion-label>
+      <ion-datetime displayFormat="HH:mm" [(ngModel)]="indicador.HorarioEntrada"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>Data da Saída:</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="indicador.DataSaida"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label>Horário da Saída:</ion-label>
+      <ion-datetime displayFormat="HH:mm" [(ngModel)]="indicador.HorarioSaida"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-button (click)="saveIndicador()" expand="block">
+        Salvar
+      </ion-button>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
