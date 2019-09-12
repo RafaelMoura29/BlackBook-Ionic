@@ -1,18 +1,22 @@
 <ion-header>
   <ion-toolbar color="primary">
-      <ion-buttons slot="start">
-          <ion-back-button></ion-back-button>
-       </ion-buttons>
+    <ion-button (click)="logout()" slot="start" class="Bt_Sair">
+      <ion-icon name="log-out"></ion-icon>
+    </ion-button>
     <ion-title>menu</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button routerLink="../homeNoAuth" expand="block">
-    Entrada de Dados
-  </ion-button>
+  <div id="1Linha">
+    <ion-card routerLink="../homeNoAuth" expand="block" id="formularios" color="primary">
+      <ion-img id="img_Entrada_Dados" src="../assets/img/icone_Formularios.png"></ion-img>
+      <p id="Titulo_Entrada_Dados">Entrada de Dados</p> 
+    </ion-card>
 
-  <ion-button routerLink="../graficosNoAuth" expand="block">
-    Indicadores
-  </ion-button>
+    <ion-card routerLink="../graficosNoAuth" expand="block" id="indicadores" color="primary">
+      <ion-img id="img_Indicadores" src="../assets/img/icone_Graficos.png"></ion-img>
+      <p id="Titulo_Indicadores">Indicadores</p>
+    </ion-card>
+  </div>
 </ion-content>
