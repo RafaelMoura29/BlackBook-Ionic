@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
 import { LoginGuard } from './guards/login.guard';
-
+ 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule', canActivate: [AuthGuard] },
@@ -15,6 +15,11 @@ const routes: Routes = [
   { path: 'menuNoAuth', loadChildren: './pages/menu/menu.module#MenuPageModule' },
   { path: 'graficosNoAuth', loadChildren: './pages/graficos/graficos.module#GraficosPageModule' },
   { path: 'indicadores-entrada-saida', loadChildren: './pages/indicadores-entrada-saida/indicadores-entrada-saida.module#IndicadoresEntradaSaidaPageModule' },
+  { path: 'cadastro-unidade', loadChildren: './pages/cadastro-unidade/cadastro-unidade.module#CadastroUnidadePageModule' },
+  { path: 'cadastro-paciente', loadChildren: './pages/cadastro-paciente/cadastro-paciente.module#CadastroPacientePageModule' },
+  { path: 'mortalidade-bruta', loadChildren: './pages/mortalidade-bruta/mortalidade-bruta.module#MortalidadeBrutaPageModule' },
+  { path: 'leitos', loadChildren: './pages/leitos/leitos.module#LeitosPageModule' },
+  { path: 'pagina-leitos', loadChildren: './pages/pagina-leitos/pagina-leitos.module#PaginaLeitosPageModule' },
 ];
 
 @NgModule({
