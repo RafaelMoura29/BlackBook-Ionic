@@ -10,6 +10,7 @@ export class CadastroUnidadePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
+    
+  } 
+  
 }

@@ -1,9 +1,32 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Cadastro-Unidade</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro Unidade</ion-title>
   </ion-toolbar>
 </ion-header>
+ 
+<ion-content color="secondary">
 
-<ion-content>
+  <ion-item class="Input Input_Primeiro">
+    <ion-input type="text" placeholder="Código"></ion-input>
+  </ion-item>
+
+  <ion-item class="Input">
+    <ion-input type="text" placeholder="Nome"></ion-input>
+  </ion-item>
+
+  <ion-item class="Input">
+    <ion-input type="text" placeholder="Senha"></ion-input>
+  </ion-item>
+
+  <ion-item class="Input">
+    <ion-input type="text" placeholder="Confirmar Senha"></ion-input>
+  </ion-item>
+
+  <ion-button id="Bt_Cadastrar" (click)="" color="success" expand="block">
+      Cadastrar
+    </ion-button>
 
 </ion-content>

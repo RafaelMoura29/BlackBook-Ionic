@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Cadastro-Paciente</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro Paciente</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="secondary">
+
+  <ion-item class="Input Input_Primeiro">
+    <ion-input type="text" placeholder="Prontuário"></ion-input>
+  </ion-item>
+
+  <ion-item class="Input">
+    <ion-input type="text" placeholder="Nome"></ion-input>
+  </ion-item>
+
+  <ion-item class="Input">
+    <ion-input type="number" placeholder="Idade"></ion-input>
+  </ion-item>
+
+  <ion-item class="Select_Sexo" color="secondary">
+    <ion-label >Sexo</ion-label>
+    <ion-select placeholder="Selecione">
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+    </ion-select>
+  </ion-item>
+ 
+  <ion-button id="Bt_Cadastrar" color="success" expand="block">
+    Cadastrar
+  </ion-button>
 
 </ion-content>

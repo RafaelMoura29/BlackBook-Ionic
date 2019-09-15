@@ -1,23 +1,25 @@
 <ion-header>
-  <ion-toolbar color="primary">  
-      <ion-buttons slot="start">
-          <ion-back-button></ion-back-button>
-       </ion-buttons>
-      <ion-title>Leitos</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Leitos</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="secondary">
 
-    <ion-card *ngFor="let item of [0, 1, 2]">
-      <ion-card-header color="success-shade">
-        <ion-card-title>Nome Leito</ion-card-title>
-      </ion-card-header>
-  
-      <ion-item color="success" class="activated">
-        <ion-label id="Mortalidade_Bruta">Leito desocupado</ion-label>
-      </ion-item>
-  
-    </ion-card>
+  <ion-card *ngFor="let item of [0, 1, 2]" routerLink="../pagina-leitos">
+    <ion-card-header class="header">
+      <ion-card-title>Nome Leito</ion-card-title>
+    </ion-card-header>
+
+    <ion-item class="body">
+      <ion-label id="Mortalidade_Bruta">Desocupado</ion-label>
+    </ion-item>
+
+  </ion-card>
+
+      <ion-icon class="Bt_Adicionar_Leito" name="add-circle"></ion-icon>
 
 </ion-content>
