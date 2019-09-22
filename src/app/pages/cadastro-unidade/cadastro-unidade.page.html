@@ -8,25 +8,24 @@
 </ion-header>
  
 <ion-content color="secondary">
-
+ 
   <ion-item class="Input Input_Primeiro">
-    <ion-input type="text" placeholder="Código"></ion-input>
+    <ion-input type="text" placeholder="Código" [(ngModel)]="this.codigo_Unidade"></ion-input>
   </ion-item>
 
   <ion-item class="Input">
-    <ion-input type="text" placeholder="Nome"></ion-input>
+    <ion-input type="text" placeholder="Nome" [(ngModel)]="this.nome_Unidade"></ion-input>
   </ion-item>
 
   <ion-item class="Input">
-    <ion-input type="text" placeholder="Senha"></ion-input>
+    <ion-input type="text" placeholder="Senha" type="password" [(ngModel)]="this.senha_Unidade"></ion-input>
   </ion-item>
 
   <ion-item class="Input">
-    <ion-input type="text" placeholder="Confirmar Senha"></ion-input>
+    <ion-input type="text" placeholder="Confirmar Senha" type="password" [(ngModel)]="this.confirmar_Senha_Unidade"></ion-input>
   </ion-item>
 
-  <ion-button id="Bt_Cadastrar" (click)="" color="success" expand="block">
+  <ion-button id="Bt_Cadastrar" (click)="InsereDados()" color="success" expand="block">
       Cadastrar
     </ion-button>
-
 </ion-content>

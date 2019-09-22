@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import {   HttpClientModule } from '@angular/common/http';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -13,10 +15,12 @@ const routes: Routes = [
     component: CadastroUnidadePage
   }
 ];
-
+ 
 @NgModule({
   imports: [
     CommonModule,
+    HttpModule,
+    HttpClientModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
@@ -24,3 +28,4 @@ const routes: Routes = [
   declarations: [CadastroUnidadePage]
 })
 export class CadastroUnidadePageModule {}
+
