@@ -9,17 +9,8 @@
 
 <ion-content color="secondary">
 
-  <ion-card *ngFor="let item of [0, 1, 2]" routerLink="../pagina-leitos">
-    <ion-card-header class="header">
-      <ion-card-title>Nome Leito</ion-card-title>
-    </ion-card-header>
+  <quadro-leito></quadro-leito>
 
-    <ion-item class="body">
-      <ion-label id="Mortalidade_Bruta">Desocupado</ion-label>
-    </ion-item>
-
-  </ion-card>
-
-      <ion-icon class="Bt_Adicionar_Leito" name="add-circle"></ion-icon>
+  <ion-icon class="Bt_Adicionar_Leito" name="add-circle" (click)="popup()"></ion-icon>
 
 </ion-content>

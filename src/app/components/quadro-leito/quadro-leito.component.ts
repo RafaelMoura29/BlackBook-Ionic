@@ -10,5 +10,5 @@ export class QuadroLeitoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-
+ 
 }

@@ -37,7 +37,7 @@ export class CadastroUnidadePage implements OnInit {
           senha: this.senha_Unidade
         };
 
-        this.http.post('http://localhost:8080/CreateUnidade', data).pipe(
+        this.http.post('https://blackbooknodeserver.herokuapp.com/CreateUnidade', data).pipe(
           map(res => res.json())
         ).subscribe(response => {
           console.log('POST Response:', response);
